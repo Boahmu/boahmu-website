@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+i{
+    position: absolute;
+    height: 300px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 600px;
+    border-bottom-right-radius: 600px;
+    animation: animate 5s linear infinite;
+}
+
+i:nth-child(5n+2){
+    background: linear-gradient(transparent, #00e1ff);
+}
+
+i:nth-child(5n+3){
+    background: linear-gradient(transparent, #0062cc);
+}
+
+i:nth-child(5n+4){
+    background: linear-gradient(transparent, #472b6e);
+}
+
+i:nth-child(5n+5){
+    background: linear-gradient(transparent, #3e8cc7);
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(calc(100vh + 200px));
+    }
+    
+}
